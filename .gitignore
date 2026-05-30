@@ -1,0 +1,38 @@
+# OS noise
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Obsidian — keep configs we ship, ignore per-machine state
+.obsidian/workspace
+.obsidian/workspace.json
+.obsidian/workspace-mobile.json
+.obsidian/cache
+.obsidian/graph.json
+.obsidian/plugins/*/data.json
+.obsidian/hotkeys.json
+
+# Obsidian trash bin
+.trash/
+
+# Editor backups
+*.bak
+*.swp
+*.swo
+*~
+
+# Local env / secrets (just in case)
+.env
+.env.local
+*.pem
+*.key
+
+# Notion MCP — token lives in .mcp.json; never commit it with a real token
+# The placeholder <NOTION_TOKEN> is safe to commit; replace it locally only
+# If you use a separate secrets file, add it here:
+.notion_token
+
+# Python / Node noise (if users add scripts later)
+__pycache__/
+node_modules/
+.venv/
