@@ -6,6 +6,17 @@ Format: `## [version] — YYYY-MM-DD`
 
 ---
 
+## [1.1.0] — 2026-07-12
+
+### Skills (`.claude/skills/`)
+Two workflows from `CLAUDE.md` are now also invocable as named commands:
+- **`/vault-ingest`** — Core Workflow #1 (Ingest): identify source → place (concept page vs literature note) → write from template → update `index.md`/`log.md`/MOC → dispose of the source.
+- **`/vault-lint`** — Core Workflow #3 (Lint): 6 checks with ready-to-run bash (orphan pages, broken wikilinks, index coverage, stale one-liners, contradiction scan, missing MOCs) → prioritised health report.
+
+Joins the existing `/notion-sync` skill. `CLAUDE.md` is unchanged — the skills package its workflows for one-command invocation.
+
+---
+
 ## [1.0.0] — 2026-05-30
 
 Initial public release.
